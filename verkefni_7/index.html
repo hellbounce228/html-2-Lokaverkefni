@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/portal-blue-logo.png">
+    
+</head>
+<body>
+  <div class="splash-screen">
+    <div class="splash-logo"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    
+  
+    <div class="menu-container">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+      <nav class="menu">
+        <a href="#game">About Game</a>
+        <a href="valve.html">Valve</a>
+        <a href="portal-3.html">Portal 3</a>
+
+        <a><!--putting a blank a for css :( -->
+          <div class="popup-order-container">
+          <input type="checkbox" id="order-toggle" class="order-toggle" />
+          <label for="order-toggle" class="order-button">Newsletter</label>
+          <div class="popup popup-order" >
+              <h3>Newsletter</h3>
+              <form>
+              <label for="username">Your Email:</label>
+              <input type="email" name="email" required placeholder="Email">
+              
+              <label for="nickname">Your nickname:</label>
+              <input type="nickname" id="nickname" name="nickname" placeholder="Nickname" required>
+              
+              <p>We will send you all the news about our game</p>
+  
+              <button class="submit-order" type="submit">Submit</button>
+              </form>
+          </div>
+          </div>
+      </a>
+
+      </nav>
+    </div>
+
+    <header class="col-2 header-container border-bottom">
+        
+          <!--
+            <img class="logo-picture" src="images/logo.svg" width="100">
+          -->
+          <section class="header-article">
+            <h1>Ever heard about Portal?</h1>
+
+            <h3>
+              This mind-bending game will twist<br> your perception of space and physics as you solve puzzles using portals to teleport across rooms.<br> Ready to challenge your brain and experience a game like no other?
+            </h3>
+          </section>
+          <section>
+            <h1 class="welcome-text header-text">Welcome to Aperture Science</h1>
+            <div class="portal-man-header"><img src="images/portal-man-header.png" alt=""></div>
+          </section>
+          
+          
+    </header>
+    <div class="popup-container">
+      <input type="checkbox" id="question-toggle" class="question-toggle" />
+      <label for="question-toggle" class="popup-button"><span class="icon-mail4"></span></label>
+    
+      <div class="popup">
+        <h3>Ask a Question</h3>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+          
+          <label for="question">Question:</label>
+          <textarea id="question" name="question" placeholder="Your question" required></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id='game' class="introduction border-bottom">
+      <h1>Through the Portal: How a Puzzle Game Redefined Sci-Fi</h1>
+      <br>
+      <p>
+      
+      Portal is a first-person puzzle-platformer developed by Valve and released in 2007. Players control Chell, a silent protagonist trapped in Aperture Laboratories, solving physics-based puzzles using the Aperture Science Handheld Portal Device. This tool creates two interconnected portals, allowing for creative movement and problem-solving. Throughout the game, Chell is guided—and taunted—by GLaDOS, a darkly humorous AI with sinister intentions. The game’s clever mechanics, tight design, and eerie atmosphere made it an instant classic.
+    </p>
+      <h1>Gameplay Example:</h1><h7>Note: The animation only works in 1920 to 1080 resolution</h7>
+      <br>
+      <input type="checkbox" id="playButton" class="play-button">
+      <label for="playButton" class="play-btn">Play</label>
+      
+      <div class="animation-scene">
+          <div class="portal-gun">
+              <img src="images/portal-gun.png" alt="portal gun">
+          </div>
+          <div class="portal-blue">
+              <img src="images/portal-blue.png" alt="blue portal">
+          </div>
+          <div class="man-running">
+            <img src="images/man-running-whole.png">
+          </div>
+          <div class="man-running-mirrored">
+            <img src="images/man-running-mirrored.png">
+          </div>
+          <div class="portal-orange">
+              <img src="images/portal-orange.png" alt="orange portal">
+          </div>
+      </div>
+      
+      <h1 class="debug-text">IF YOU SEE THIS TEXT THAN YOUR DISPLAY OS TOO SMALL/TOO BIG, THE ANIMATION WON'T DISPLAY CORRECTLY</h1>
+      <p>
+        
+        Its sequel, Portal 2 (2011), expands the story and gameplay with new mechanics like repulsion gels, light bridges, and tractor beams. It introduces Wheatley, a bumbling AI core, and explores the history of Aperture Science. The game also features a cooperative mode where players solve puzzles together. Portal 2 is widely praised for its storytelling, humor, and innovative puzzle design, cementing the series as one of the most influential in gaming history.
+       </p>
+        
+          <h3>
+            To learn about Portal 3, visit the <a href="#footer">link</a> at the bottom of this page.
+          </h3>
+          <br>
+    </div>
+    <div class="table-background">
+      <div class="table-container">
+        <div class="table-header">
+            <h1>The most game-changing levels from Portal and Portal 2</h1>
+        </div>
+
+        <table class="table">
+          <thead>
+              <tr>
+                  <th id="level"> LEVEL</th>
+                  <th id="innovation"> INNOVATION</th>
+                  <th id="challenge"> CHALLENGE</th>
+                  <th id="experience"> EXPERIENCE</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="LEVEL">Test Chamber 19</td>
+                    <td data-label="INNOVATION">First Real Escape Sequence</td>
+                    <td data-label="CHALLENGE">Avoiding Fire Pit</td>
+                    <td data-label="EXPERIENCE">GLaDOS tricks you into incineration, but you escape.</td>
+                </tr>
+                <tr>
+                    <td data-label="LEVEL">Turret Ambush (Portal 1)</td>
+                    <td data-label="INNOVATION">First Full Combat Test</td>
+                    <td data-label="CHALLENGE">Avoiding Turret Fire</td>
+                    <td data-label="EXPERIENCE">Players must learn to disable turrets without weapons.</td>
+                </tr>
+                <tr>
+                    <td data-label="LEVEL">The Fall (Portal 2)</td>
+                    <td data-label="INNOVATION">Introduction to Old Aperture</td>
+                    <td data-label="CHALLENGE">No Portal Surfaces at Start</td>
+                    <td data-label="EXPERIENCE">You fall into an abandoned section and navigate ruins.</td>
+                </tr>
+                <tr>
+                    <td data-label="LEVEL">Propulsion Gel (Portal 2)</td>
+                    <td data-label="INNOVATION">Introduction of Speed Gel</td>
+                    <td data-label="CHALLENGE">Mastering Momentum</td>
+                    <td data-label="EXPERIENCE">Fast-paced movement and timing challenges.</td>
+                </tr>
+                <tr>
+                    <td data-label="LEVEL">Final Boss (Portal 1)</td>
+                    <td data-label="INNOVATION">First Puzzle-Based Boss Fight</td>
+                    <td data-label="CHALLENGE">Timed Core Destruction</td>
+                    <td data-label="EXPERIENCE">GLaDOS taunts you as you systematically dismantle her.</td>
+                </tr>
+                <tr>
+                    <td data-label="LEVEL">Lunacy (Portal 2)</td>
+                    <td data-label="INNOVATION">Portals to the Moon</td>
+                    <td data-label="CHALLENGE">Quick Reaction Time</td>
+                    <td data-label="EXPERIENCE">A dramatic and unexpected ending using the moon’s surface.</td>
+                </tr>
+            </tbody>
+           
+        </table>
+      
+       
+      </div>
+    </div>
+    
+    <footer id="footer" class="col-3 container">
+      <nav>
+        <div class=" pink-text">
+          <h2>
+            Portal 3 page ⬇
+          </h2>
+        </div>
+        <a href="portal-3.html" >
+          <img src="images/portal-3-button.jpg" class="portal-3-link">
+        </a>
+      
+      </nav>
+      <nav>
+        <div class=" pink-text">
+          <h2>
+            Valve page ⬇
+          </h2>
+        </div>
+        <a href="valve.html" >
+          <img src="images/valve-button.jpg" class="portal-3-link">
+        </a>
+      
+      </nav>
+      <nav>
+        <br>
+        <br>
+        <dl>              <!--Description list -->
+          <dt>Nafn</dt>
+            <dd><span class="icon-user"> </span>Bohdan Chumakov</dd>
+          <dt>Tölvupóstur</dt>
+            <dd><span class="icon-mail4"> </span> Barsukche@gmail.com</dd>
+          <dt>Vefhönnun</dt>
+            <dd><span class="icon-html-five"> </span>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+        </dl>
+      </nav>
+    </footer>
+      <p class="center">2 spönn, haust 2024.</p>
+  </div>
+</body>
+</html>

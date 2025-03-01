@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" type="image/png" href="images/portal-blue-logo.png">
+    
+</head>
+<body>
+  <div class="splash-screen">
+    <div class="splash-logo"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    
+  
+    <div class="menu-container">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+      <nav class="menu">
+        <a href="index.html">About Game</a>
+        <a href="#header">Valve</a>
+        <a href="portal-3.html">Portal 3</a>
+
+        <a><!--putting a blank a for css :( -->
+          <div class="popup-order-container">
+          <input type="checkbox" id="order-toggle" class="order-toggle" />
+          <label for="order-toggle" class="order-button">Newsletter</label>
+          <div class="popup popup-order" >
+              <h3>Newsletter</h3>
+              <form>
+              <label for="username">Your Email:</label>
+              <input type="email" name="email" required placeholder="Email">
+              
+              <label for="nickname">Your nickname:</label>
+              <input type="nickname" id="nickname" name="nickname" placeholder="Nickname" required>
+              
+              <p>We will send you all the news about our game</p>
+  
+              <button class="submit-order" type="submit">Submit</button>
+              </form>
+          </div>
+          </div>
+      </a>
+
+      </nav>
+    </div>
+
+    <header class="col-2 header-container border-bottom">
+        
+          <!--
+            <img class="logo-picture" src="images/logo.svg" width="100">
+          -->
+          <section class="header-article valve-header-article">
+            <h1>Valve: The Company That Invented Gaming...
+            <br>and Then Forgot How to Count to Three</h1>
+            <h3>
+                If you've played any video game in the last 20 years, chances are Valve had something to do with it. This legendary studio changed the gaming landscape forever — but not without leaving a trail of broken hearts and unfulfilled dreams behind.              </h3>
+          </section>
+          <section>
+            <h1 class="header-text">Valve</h1>
+            <div class="valve-man-header"><img src="images/valve-header.png" alt=""></div>
+          </section>
+          
+          
+    </header>
+    <div class="popup-container">
+      <input type="checkbox" id="question-toggle" class="question-toggle" />
+      <label for="question-toggle" class="popup-button"><span class="icon-mail4"></span></label>
+    
+      <div class="popup">
+        <h3>Ask a Question</h3>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+          
+          <label for="question">Question:</label>
+          <textarea id="question" name="question" placeholder="Your question" required></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    
+        <section class="valve-article valve-article_1">
+          <br>
+             <h3>Founded by former Microsoft employees Gabe Newell and Mike Harrington in 1996, Valve didn't just make games — they made revolutions. Half-Life redefined first-person shooters. Counter-Strike became THE competitive shooter blueprint. Then they gave us Steam — the platform that basically owns the entire gaming market.  
+                <br>
+                <br>
+                But for all their genius, Valve is haunted by a strange curse — they just can't seem to count past two.
+             </h3>   
+             <br>
+        </section>
+        <div class="col-2 valve-article_2">
+        <section class="valve-article">
+            <h1>
+                Gabe Newell: The Meme, The Legend, The Billionaire
+            </h1>
+            <br>
+            <p>
+                Gaben, as the internet affectionately calls him, is more than just Valve's co-founder. <br>He's a walking, talking, Half-Life-3-denying myth. <br>Whether he's delivering keynote speeches in Hawaiian shirts or becoming a meme lord, Gabe's name is whispered in gaming forums like some kind of ancient deity.  
+
+                They say if you whisper "Half-Life 3 confirmed" three times into a mirror, Gabe will appear behind you... and announce a new hat update for Team Fortress 2.  
+
+            </p>
+
+        </section>
+        <section>
+            <img src="images/gabe-newell.jpg">
+
+        </section>
+    </div>
+
+
+    <footer id="footer" class="col-3 container">
+        <nav>
+          <div class=" pink-text">
+            <h2>
+              Portal 3 page ⬇
+            </h2>
+          </div>
+          <a href="portal-3.html" >
+            <img src="images/portal-3-button.jpg" class="portal-3-link">
+          </a>
+        
+        </nav>
+        <nav>
+          <div class=" pink-text">
+            <h2>
+              Portal page ⬇
+            </h2>
+          </div>
+          <a href="index.html" >
+            <img src="images/portal-button.jpg" class="portal-3-link">
+          </a>
+        
+        </nav>
+        <nav>
+          <br>
+          <br>
+          <dl>              <!--Description list -->
+            <dt>Nafn</dt>
+              <dd><span class="icon-user"> </span>Bohdan Chumakov</dd>
+            <dt>Tölvupóstur</dt>
+              <dd><span class="icon-mail4"> </span> Barsukche@gmail.com</dd>
+            <dt>Vefhönnun</dt>
+              <dd><span class="icon-html-five"> </span>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+          </dl>
+        </nav>
+      </footer>
+        <p class="center">2 spönn, haust 2024.</p>
+
+  </div>
+</body>
+</html>
